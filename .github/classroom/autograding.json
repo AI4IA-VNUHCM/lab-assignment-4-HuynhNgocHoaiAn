@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "Ex1 Test1",
+      "setup": "gcc ./src/Exercise1.c -o ./bin/ex1.out -lm",
+      "run": "./bin/ex1.out 4",
+      "input": "",
+      "output": "1 \r\n1 1 \r\n1 2 1 \r\n1 3 3 1 \r\n1 4 6 4 1 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex1 Test2",
+      "setup": "",
+      "run": "./bin/ex1.out 5",
+      "input": "",
+      "output": "1 \r\n1 1 \r\n1 2 1 \r\n1 3 3 1 \r\n1 4 6 4 1 \r\n1 5 10 10 5 1 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex2 Test1",
+      "setup": "gcc ./src/Exercise2.c -o ./bin/ex2.out -lm",
+      "run": "./bin/ex2.out 5 4 10 21 12 53 64 53 86 72 68 99 10 11 12 13 14 15 16 17 18 19",
+      "input": "",
+      "output": "68 13 86 11 \r\n64 17 18 15 \r\n16 21 14 19 \r\n12 53 12 53 \r\n10 99 10 72 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex2 Test2",
+      "setup": "",
+      "run": "./bin/ex2.out 5 4 21 10 53 12 53 64 72 86 99 68 11 10 13 12 15 14 17 16 19 18",
+      "input": "",
+      "output": "99 10 72 10 \r\n53 12 53 12 \r\n21 16 19 14 \r\n17 64 15 18 \r\n13 68 11 86 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex3 Test1",
+      "setup": "gcc ./src/Exercise3.c -o ./bin/ex3.out -lm",
+      "run": "./bin/ex3.out 4 10 21 12 53 64 53 86 72 68 99 10 11 12 13 14 15",
+      "input": "",
+      "output": "10 21 12 12 \r\n64 10 53 72 \r\n68 86 15 11 \r\n99 13 14 53 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex3 Test2",
+      "setup": "",
+      "run": "./bin/ex3.out 4 21 10 53 12 53 64 72 86 99 68 11 10 13 12 15 14",
+      "input": "",
+      "output": "11 10 53 12 \r\n53 14 13 86 \r\n99 68 21 10 \r\n72 12 15 64 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex4 Test a",
+      "setup": "gcc ./src/Exercise4.c -o ./bin/ex4.out -lm",
+      "run": "./bin/ex4.out 5 4 1 2 1 2 3 4 10 21 12 53 64 53 86 72 68 99 10 11 12 13 14 15 16 17 18 19",
+      "input": "",
+      "output": "10 21 12 53 \r\n64 53 86 72 \r\n1 2 3 4 \r\n68 99 10 11 \r\n12 13 14 15 \r\n16 17 18 19 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Ex4 Test b",
+      "setup": "",
+      "run": "./bin/ex4.out 5 4 2 2 10 21 12 53 64 53 86 72 68 99 10 11 12 13 14 15 16 17 18 19",
+      "input": "",
+      "output": "10 21 12 53 \r\n64 53 86 72 \r\n12 13 14 15 \r\n16 17 18 19 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Ex4 Test c",
+      "setup": "",
+      "run": "./bin/ex4.out 5 4 3 2 1 2 3 4 5 10 21 12 53 64 53 86 72 68 99 10 11 12 13 14 15 16 17 18 19",
+      "input": "",
+      "output": "10 21 1 12 53 \r\n64 53 2 86 72 \r\n68 99 3 10 11 \r\n12 13 4 14 15 \r\n16 17 5 18 19 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Ex4 Test d",
+      "setup": "",
+      "run": "./bin/ex4.out 5 4 4 2 10 21 12 53 64 53 86 72 68 99 10 11 12 13 14 15 16 17 18 19",
+      "input": "",
+      "output": "10 21 53 \r\n64 53 72 \r\n68 99 11 \r\n12 13 15 \r\n16 17 19 ",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 5
+    },
+    {
+      "name": "Ex5 Test1",
+      "setup": "gcc ./src/Exercise5.c -o ./bin/ex5.out -lm",
+      "run": "./bin/ex5.out 5 4 10 21 22 54 64 53 86 72 68 99 30 11 12 23 64 15 16 77 98 19",
+      "input": "",
+      "output": "53",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex5 Test2",
+      "setup": "",
+      "run": "./bin/ex5.out 5 4 10 21 22 54 64 53 86 72 68 99 90 91 12 23 64 15 16 77 98 19",
+      "input": "",
+      "output": "68",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
